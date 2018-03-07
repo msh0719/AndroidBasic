@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myeong.calculator.MainActivity">
+
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="첫 번쨰 숫자"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number1"
+        android:layout_alignStart="@+id/number1"
+        android:layout_below="@+id/number1"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="두 번째 숫자"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/div"
+        android:layout_alignLeft="@+id/number2"
+        android:layout_alignStart="@+id/number2"
+        android:layout_marginBottom="15dp"
+        android:text="+"
+        android:onClick="addClick"/>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sub"
+        android:layout_alignLeft="@+id/sub"
+        android:layout_alignStart="@+id/sub"
+        android:layout_marginBottom="30dp"
+        android:onClick="divClick"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add"
+        android:layout_below="@+id/number2"
+        android:layout_marginTop="130dp"
+        android:text="*"
+        android:onClick="mulClick"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mul"
+        android:layout_alignBottom="@+id/mul"
+        android:layout_alignEnd="@+id/number2"
+        android:layout_alignRight="@+id/number2"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="-"
+        android:onClick="subClick"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mul"
+        android:layout_alignRight="@+id/mul"
+        android:layout_below="@+id/sub"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="58dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+</RelativeLayout>

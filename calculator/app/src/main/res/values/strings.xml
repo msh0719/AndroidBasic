@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="number1">첫 번째 숫자</string>
+    <string name="number2">두 번쨰 숫자</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="mul">*</string>
+    <string name="div">/</string>
+</resources>

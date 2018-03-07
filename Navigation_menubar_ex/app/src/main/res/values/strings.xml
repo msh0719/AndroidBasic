@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Navigation_menubar_ex</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="textView2">첫 번째 화면</string>
+    <string name="textView3">두 번째 화면</string>
+</resources>
